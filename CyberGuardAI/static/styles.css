@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #bd11cb4d, #9e9ca7bd);
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    background: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form styling */
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+form label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #1a5fbf;
+}
+
+/* Result styling */
+.result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.result h2 {
+    color: #2575fc;
+    margin-bottom: 0.5rem;
+}
+
+.result p {
+    font-size: 1rem;
+    color: #333;
+}

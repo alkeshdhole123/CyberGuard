@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Category Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Crime Category Prediction</h1>
+        <form action="/predict" method="POST">
+            <label for="crime_description">Enter Crime Description:</label><br>
+            <textarea name="crime_description" rows="4" required></textarea><br>
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <h2>Prediction:</h2>
+                <p><strong>Category:</strong> {{ prediction }}</p>
+                <p><strong>Input:</strong> {{ crime_description }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
